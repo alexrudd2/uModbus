@@ -1,5 +1,6 @@
-.. image:: https://travis-ci.org/AdvancedClimateSystems/uModbus.svg
-   :target: https://travis-ci.org/AdvancedClimateSystems/uModbus
+.. image:: https://img.shields.io/github/check-runs/alexrudd2/uModbus/main
+   :alt: GitHub commit check runs
+   :target: https://github.com/alexrudd2/uModbus/actions
 
 .. image:: https://coveralls.io/repos/AdvancedClimateSystems/uModbus/badge.svg?service=github
     :target: https://coveralls.io/github/AdvancedClimateSystems/uModbus
@@ -7,8 +8,9 @@
 .. image:: https://img.shields.io/pypi/v/uModbus.svg
     :target: https://pypi.python.org/pypi/uModbus
 
-.. image:: https://img.shields.io/pypi/pyversions/uModbus.svg
-    :target: https://pypi.python.org/pypi/uModbus
+.. image:: https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2Falexrudd2%2FuModbus%2Fmain%2Fpyproject.toml
+   :alt: Python Version from PEP 621 TOML
+   :target: https://pypi.python.org/pypi/uModbus
 
 uModbus
 =======
