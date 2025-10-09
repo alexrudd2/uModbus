@@ -1,12 +1,6 @@
 import struct
 import pytest
 
-try:
-    # Mock has been added to stdlib in Python 3.3.
-    from unittest.mock import MagicMock, call
-except ImportError:
-    from mock import MagicMock, call
-
 from umodbus.route import Map
 from umodbus.exceptions import (IllegalFunctionError, IllegalDataAddressError,
                                 IllegalDataValueError,
