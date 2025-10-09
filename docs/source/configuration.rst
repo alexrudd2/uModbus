@@ -15,4 +15,3 @@ Configuration
 
 .. autoclass:: Config
     :members:  SIGNED_VALUES
-
