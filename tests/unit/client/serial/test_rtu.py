@@ -13,5 +13,5 @@ def test_send_message_with_timeout():
     # To test timeout use a request that needs more bytes for the response.
     message = read_coils(slave_id=0, starting_address=1, quantity=40)
 
-    with pytest.raises(ValueError):
+    with pytest.raises(ValueError):  # noqa: PT011
         send_message(message, s)

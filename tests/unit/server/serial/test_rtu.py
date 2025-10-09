@@ -33,5 +33,5 @@ def test_rtu_server_send_empty_message(rtu_server):
     rtu_server.serial_port = serial_for_url('loop://')
     rtu_server.serial_port.write(b'')
 
-    with pytest.raises(ValueError):
+    with pytest.raises(ValueError):  # noqa: PT011
         rtu_server.serve_once()
