@@ -21,7 +21,8 @@ class DataRule:
 
     def match(self, slave_id, function_code, address):
         # A constraint of None matches any value
-        matches = lambda values, v: values is None or v in values
+        def matches(values, v):
+            return values is None or v in values
         return matches(self.slave_ids, slave_id) and \
                matches(self.function_codes, function_code) and \
                matches(self.addresses, address)

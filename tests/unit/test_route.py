@@ -2,7 +2,8 @@
 from umodbus.route import DataRule
 
 
-endpoint = lambda slave_id, function_code, address: 0
+def endpoint(slave_id, function_code, address):
+    return 0
 
 
 def test_basic_route():
