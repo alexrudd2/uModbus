@@ -3,7 +3,7 @@ name = "umodbus"
 version = "1.0.4"
 description = "Implementation of the Modbus protocol in pure Python"
 readme = "README.rst"
-license="MPL-2.0"
+license = { text = "MPL-2.0" }
 requires-python = ">=3.7,<3.10"
 dependencies = [
     "pyserial~=3.4",
