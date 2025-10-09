@@ -303,7 +303,7 @@ class ReadCoils(ModbusFunction):
 
         :return: number of bytes.
         """
-        return 2 + int(math.ceil(self.quantity / 8))
+        return 2 + math.ceil(self.quantity / 8)
 
     def create_response_pdu(self, data):
         """ Create response pdu.
@@ -511,7 +511,7 @@ class ReadDiscreteInputs(ModbusFunction):
 
         :return: number of bytes.
         """
-        return 2 + int(math.ceil(self.quantity / 8))
+        return 2 + math.ceil(self.quantity / 8)
 
     def create_response_pdu(self, data):
         """ Create response pdu.
