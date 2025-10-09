@@ -1,7 +1,7 @@
 import os
 
 
-class Config(object):
+class Config:
     """ Class to hold global configuration. """
 
     SINGLE_BIT_VALUE_FORMAT_CHARACTER = 'B'

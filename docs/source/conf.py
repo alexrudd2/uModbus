@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 #
 # Modbus documentation build configuration file, created by
 # sphinx-quickstart on Tue Oct 13 21:13:48 2015.

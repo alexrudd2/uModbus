@@ -50,6 +50,8 @@ ignore = [
   "D104",  # Missing docstring in public package
   "D107",  # Missing docstring in __init__
   "RUF100",
+  "UP032", # f-string
+  "UP030", # implicit references for positional format fields
 ]
 
 select = [
@@ -63,7 +65,7 @@ select = [
     "PT",  # flake8-pytest
     "RUF", # ruff base config
     "SIM", # flake-simplify
-#    "UP",  # pyupgrade
+    "UP",  # pyupgrade
     "W",   # pycodestyle warnings
     "YTT", # flake8-2020
     # "ARG", # flake8-unused args

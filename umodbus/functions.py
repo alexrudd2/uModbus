@@ -157,7 +157,7 @@ def expected_response_pdu_size_from_request_pdu(pdu):
     return create_function_from_request_pdu(pdu).expected_response_pdu_size
 
 
-class ModbusFunction(object):
+class ModbusFunction:
     function_code = None
 
 
@@ -1530,7 +1530,7 @@ class WriteMultipleRegisters(ModbusFunction):
 
         # Values are 16 bit, so each value takes up 2 bytes.
         fmt = '>' + (conf.MULTI_BIT_VALUE_FORMAT_CHARACTER *
-                     int((byte_count / 2)))
+                     int(byte_count / 2))
 
         values = list(struct.unpack(fmt, pdu[6:]))
 

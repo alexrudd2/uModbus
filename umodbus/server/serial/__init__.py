@@ -33,7 +33,7 @@ def get_server(server_class, serial_port):
     return s
 
 
-class AbstractSerialServer(object):
+class AbstractSerialServer:
     _shutdown_request = False
 
     def get_meta_data(self, request_adu):
