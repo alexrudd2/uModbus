@@ -114,7 +114,7 @@ def pdu_to_function_code_or_raise_error(resp_pdu):
     """
     function_code = struct.unpack('>B', resp_pdu[0:1])[0]
 
-    if function_code not in function_code_to_function_map.keys():
+    if function_code not in function_code_to_function_map:
         error_code = struct.unpack('>B', resp_pdu[1:2])[0]
         raise error_code_to_exception_map[error_code]
 
