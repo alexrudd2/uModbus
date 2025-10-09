@@ -13,13 +13,12 @@ def tcp_server(request):
     t = Thread(target=tcp.serve_forever)
     t.start()
 
-    def fin():
+    try:
+        yield tcp
+    finally:
         tcp.shutdown()
         tcp.server_close()
         t.join()
-
-    request.addfinalizer(fin)
-    return tcp
 
 
 @pytest.fixture
@@ -27,9 +26,10 @@ def sock(tcp_server):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.connect(tcp_server.socket.getsockname())
 
-    yield sock
-
-    sock.close()
+    try:
+        yield sock
+    finally:
+        sock.close()
 
 
 @pytest.fixture

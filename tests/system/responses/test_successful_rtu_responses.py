@@ -10,10 +10,10 @@ def enable_signed_values(request):
     tmp = conf.SIGNED_VALUES
     conf.SIGNED_VALUES = True
 
-    def fin():
+    try:
+        yield
+    finally:
         conf.SIGNED_VALUES = tmp
-
-    request.addfinalizer(fin)
 
 
 def send_message(adu, server):

@@ -10,10 +10,10 @@ def enable_signed_values(request):
     tmp = conf.SIGNED_VALUES
     conf.SIGNED_VALUES = False
 
-    def fin():
+    try:
+        yield
+    finally:
         conf.SIGNED_VALUES = tmp
-
-    request.addfinalizer(fin)
 
 
 @pytest.fixture

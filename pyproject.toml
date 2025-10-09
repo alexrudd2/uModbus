@@ -50,7 +50,6 @@ ignore = [
   "D104",  # Missing docstring in public package
   "D107",  # Missing docstring in __init__
   "RUF100",
-  "PT021", # yield instead of request.addfinalizer
 ]
 
 select = [
