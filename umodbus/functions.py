@@ -1537,7 +1537,7 @@ class WriteMultipleRegisters(ModbusFunction):
         :param pdu: A request PDU.
         :return: Instance of this class.
         """
-        _, starting_address, quantity, byte_count = \
+        _, starting_address, _quantity, byte_count = \
             struct.unpack('>BHHB', pdu[:6])
 
         # Values are 16 bit, so each value takes up 2 bytes.
