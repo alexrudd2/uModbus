@@ -32,6 +32,9 @@ jobs:
     # - name: Check types with mypy
     #   run: |
     #     uv run mypy umodbus
+    - name: Spell check with codespell
+      run: | 
+        uv run codespell
     - name: Pytest
       run: |
         uv run pytest

@@ -16,7 +16,7 @@ def route(self, slave_ids=None, function_codes=None, addresses=None):
 
         @server.route(slave_ids=[1], function_codes=[1, 2], addresses=list(range(100, 200)))  # NOQA
         def read_single_bit_values(slave_id, address):
-            return random.choise([0, 1])
+            return random.choice([0, 1])
 
     Any argument can be omitted to match any value.
 

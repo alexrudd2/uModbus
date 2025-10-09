@@ -58,7 +58,7 @@ def test_response_on_multi_bit_value_read_requests(rtu_server, function):
     (rtu.write_single_register, -1337),
 ])
 def test_response_single_value_write_request(rtu_server, function, value):
-    """ Validate responde of successful Read Single Coil and Read Single
+    """ Validate response of successful Read Single Coil and Read Single
     Register request.
     """
     slave_id, starting_address, quantity = (1, 0, value)
