@@ -21,7 +21,7 @@ def tcp_server(request):
     return tcp
 
 
-@pytest.yield_fixture
+@pytest.fixture
 def sock(tcp_server):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.connect(tcp_server.socket.getsockname())
