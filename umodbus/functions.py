@@ -67,10 +67,7 @@ except ImportError:
     # Earlier versions have inspect.getargspec.
     from inspect import getargspec as getfullargspec
 
-try:
-    from functools import reduce
-except ImportError:
-    pass
+from functools import reduce
 
 from umodbus import conf, log
 from umodbus.exceptions import (
