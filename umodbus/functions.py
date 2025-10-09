@@ -55,19 +55,10 @@ A response PDU could look like this::
     'b\\x06'
 
 """
-from __future__ import division
-
 import math
 import struct
-
-try:
-    from inspect import getfullargspec
-except ImportError:
-    # inspect.getfullargspec was introduced in Python 3.4.
-    # Earlier versions have inspect.getargspec.
-    from inspect import getargspec as getfullargspec
-
 from functools import reduce
+from inspect import getfullargspec
 
 from umodbus import conf, log
 from umodbus.exceptions import (
