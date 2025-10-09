@@ -56,7 +56,7 @@ select = [
 #    "B",   # flake8-bugbear
 #    "C",   # complexity
 #    "D",   # docstrings
-#    "COM", # trailing comma rules
+    "COM", # trailing comma rules
 #    "E",   # pycodestyle errors
     "F",   # pyflakes
     "I",   # isort

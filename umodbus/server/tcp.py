@@ -70,7 +70,7 @@ class RequestHandler(AbstractRequestHandler):
             transaction_id=meta_data['transaction_id'],
             protocol_id=meta_data['protocol_id'],
             length=len(response_pdu) + 1,
-            unit_id=meta_data['unit_id']
+            unit_id=meta_data['unit_id'],
         )
 
         return response_mbap + response_pdu

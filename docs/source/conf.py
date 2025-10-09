@@ -158,7 +158,7 @@ html_static_path = ['_static']
 # Custom sidebar templates, maps document names to template names.
 html_sidebars = {
     'index':    ['globaltoc.html', 'searchbox.html'],
-    '**': ['globaltoc.html', 'relations.html', 'searchbox.html']
+    '**': ['globaltoc.html', 'relations.html', 'searchbox.html'],
 }
 
 # Additional templates that should be rendered to pages, maps page names to
@@ -259,7 +259,7 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     (master_doc, 'modbus', 'Modbus Documentation',
-     [author], 1)
+     [author], 1),
 ]
 
 # If true, show URL addresses after external links.

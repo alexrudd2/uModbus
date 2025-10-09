@@ -97,5 +97,5 @@ error_code_to_exception_map = {
     MemoryParityError.error_code: MemoryParityError,
     GatewayPathUnavailableError.error_code: GatewayPathUnavailableError,
     GatewayTargetDeviceFailedToRespondError.error_code:
-        GatewayTargetDeviceFailedToRespondError
+        GatewayTargetDeviceFailedToRespondError,
 }
