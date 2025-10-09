@@ -53,7 +53,7 @@ def test_response_on_multi_bit_value_read_requests(rtu_server, function):
         [0, -1, -2, -3, -4, -5, -6, -7, -8, -9]
 
 
-@pytest.mark.parametrize('function, value', [
+@pytest.mark.parametrize(('function', 'value'), [
     (rtu.write_single_coil, 0),
     (rtu.write_single_register, -1337),
 ])
@@ -67,7 +67,7 @@ def test_response_single_value_write_request(rtu_server, function, value):
     assert send_message(req_adu, rtu_server) == value
 
 
-@pytest.mark.parametrize('function, values', [
+@pytest.mark.parametrize(('function', 'values'), [
     (rtu.write_multiple_coils, [1, 1]),
     (rtu.write_multiple_registers, [1337, 15]),
 ])

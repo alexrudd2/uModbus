@@ -18,7 +18,7 @@ def test_no_response_for_request_with_invalid_crc(rtu_server):
         rtu_server.serve_once()
 
 
-@pytest.mark.parametrize('function_code, quantity', [
+@pytest.mark.parametrize(('function_code', 'quantity'), [
     (1, 0),
     (2, 0),
     (3, 0),

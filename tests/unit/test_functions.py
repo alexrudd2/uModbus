@@ -105,7 +105,7 @@ def route_map():
     return Map()
 
 
-@pytest.mark.parametrize('pdu,cls', [
+@pytest.mark.parametrize(('pdu', 'cls'), [
     (b'\x01\x00d\x00\x03', ReadCoils),
     (b'\x02\x00d\x00\x03', ReadDiscreteInputs),
     (b'\x03\x00d\x00\x03', ReadHoldingRegisters),
@@ -119,7 +119,7 @@ def test_create_function_from_request_pdu(pdu, cls):
     assert isinstance(create_function_from_request_pdu(pdu), cls)
 
 
-@pytest.mark.parametrize('error_code, exception_class', [
+@pytest.mark.parametrize(('error_code', 'exception_class'), [
     (1, IllegalFunctionError),
     (2, IllegalDataAddressError),
     (3, IllegalDataValueError),

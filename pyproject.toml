@@ -50,6 +50,8 @@ ignore = [
   "D104",  # Missing docstring in public package
   "D107",  # Missing docstring in __init__
   "RUF100",
+  "PT011", # too broad error
+  "PT021", # yield instead of request.addfinalizer
 ]
 
 select = [
@@ -60,7 +62,7 @@ select = [
     "E",   # pycodestyle errors
     "F",   # pyflakes
     "I",   # isort
-#    "PT",  # flake8-pytest
+    "PT",  # flake8-pytest
     "RUF", # ruff base config
 #    "SIM", # flake-simplify
 #    "UP",  # pyupgrade

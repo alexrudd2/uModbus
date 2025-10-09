@@ -8,7 +8,7 @@ from umodbus.client import tcp
 from ..validators import validate_response_mbap
 
 
-@pytest.mark.parametrize('function_code, quantity', [
+@pytest.mark.parametrize(('function_code', 'quantity'), [
     (1, 0),
     (2, 0),
     (3, 0),
