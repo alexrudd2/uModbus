@@ -57,7 +57,7 @@ select = [
     "C",   # complexity
 #    "D",   # docstrings
     "COM", # trailing comma rules
-#    "E",   # pycodestyle errors
+    "E",   # pycodestyle errors
     "F",   # pyflakes
     "I",   # isort
 #    "PT",  # flake8-pytest

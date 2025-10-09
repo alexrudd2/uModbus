@@ -1,6 +1,7 @@
 """ CRC is calculated over slave id + PDU.
 
-Most code is taken from: https://github.com/pyhys/minimalmodbus/blob/e99f4d74c83258c6039073082955ac9bed3f2155/minimalmodbus.py  # NOQA
+Most code is taken from
+https://github.com/pyhys/minimalmodbus/blob/e99f4d74c83258c6039073082955ac9bed3f2155/minimalmodbus.py
 """
 import struct
 
