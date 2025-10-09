@@ -1,8 +1,5 @@
-try:
-    from socketserver import BaseRequestHandler
-except ImportError:
-    from SocketServer import BaseRequestHandler
 from binascii import hexlify
+from socketserver import BaseRequestHandler
 
 from umodbus import log
 from umodbus.exceptions import ModbusError, ServerDeviceFailureError
