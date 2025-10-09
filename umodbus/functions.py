@@ -345,7 +345,7 @@ class ReadCoils(ModbusFunction):
         fmt = '>' + ('B' * byte_count)
         bytes_ = struct.unpack(fmt, resp_pdu[2:])
 
-        data = list()
+        data = []
 
         for i, value in enumerate(bytes_):
             padding = 8 if (read_coils.quantity - (8 * i)) // 8 > 0 \
@@ -553,7 +553,7 @@ class ReadDiscreteInputs(ModbusFunction):
         fmt = '>' + ('B' * byte_count)
         bytes_ = struct.unpack(fmt, resp_pdu[2:])
 
-        data = list()
+        data = []
 
         for i, value in enumerate(bytes_):
             padding = 8 if (read_discrete_inputs.quantity - (8 * i)) // 8 > 0 \
@@ -1386,7 +1386,7 @@ class WriteMultipleCoils(ModbusFunction):
         fmt = '>' + (conf.SINGLE_BIT_VALUE_FORMAT_CHARACTER * byte_count)
         values = struct.unpack(fmt, pdu[6:])
 
-        res = list()
+        res = []
 
         for i, value in enumerate(values):
             padding = 8 if (quantity - (8 * i)) // 8 > 0 else quantity % 8
