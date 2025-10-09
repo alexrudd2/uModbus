@@ -1,7 +1,7 @@
 import pytest
 from serial import serial_for_url
 
-from umodbus.client.serial.rtu import send_message, read_coils
+from umodbus.client.serial.rtu import read_coils, send_message
 
 
 def test_send_message_with_timeout():

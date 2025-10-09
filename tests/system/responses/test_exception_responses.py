@@ -1,9 +1,11 @@
-import pytest
 import struct
 from functools import partial
 
-from ..validators import validate_response_mbap
+import pytest
+
 from umodbus.client import tcp
+
+from ..validators import validate_response_mbap
 
 
 @pytest.mark.parametrize('function_code, quantity', [

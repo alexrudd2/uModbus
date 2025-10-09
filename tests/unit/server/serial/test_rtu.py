@@ -1,5 +1,6 @@
 import pytest
 from serial import Serial, serial_for_url
+
 from umodbus.server.serial.rtu import RTUServer, get_char_size
 
 

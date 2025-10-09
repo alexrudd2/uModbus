@@ -1,8 +1,8 @@
-import sys
-import struct
 import logging
-from logging import StreamHandler, Formatter
+import struct
+import sys
 from functools import wraps
+from logging import Formatter, StreamHandler
 
 from umodbus import log
 

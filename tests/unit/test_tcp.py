@@ -1,6 +1,6 @@
 import struct
 
-from umodbus.client.tcp import _create_request_adu, _create_mbap_header
+from umodbus.client.tcp import _create_mbap_header, _create_request_adu
 
 
 def validate_mbap_fields(mbap, slave_id, pdu):

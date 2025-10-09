@@ -57,7 +57,7 @@ select = [
 #    "COM", # trailing comma rules
 #    "E",   # pycodestyle errors
     "F",   # pyflakes
-#    "I",   # isort
+    "I",   # isort
 #    "PT",  # flake8-pytest
 #    "RUF", # ruff base config
 #    "SIM", # flake-simplify

@@ -56,8 +56,9 @@ A response PDU could look like this::
 
 """
 from __future__ import division
-import struct
+
 import math
+import struct
 
 try:
     from inspect import getfullargspec
@@ -72,10 +73,13 @@ except ImportError:
     pass
 
 from umodbus import conf, log
-from umodbus.exceptions import (error_code_to_exception_map,
-                                IllegalDataValueError, IllegalFunctionError,
-                                IllegalDataAddressError)
-from umodbus.utils import memoize, get_function_code_from_request_pdu
+from umodbus.exceptions import (
+    IllegalDataAddressError,
+    IllegalDataValueError,
+    IllegalFunctionError,
+    error_code_to_exception_map,
+)
+from umodbus.utils import get_function_code_from_request_pdu, memoize
 
 # Function related to data access.
 READ_COILS = 1

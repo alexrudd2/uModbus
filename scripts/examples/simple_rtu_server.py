@@ -1,6 +1,7 @@
 #!/usr/bin/env python
-from serial import Serial
 from collections import defaultdict
+
+from serial import Serial
 
 from umodbus.server.serial import get_server
 from umodbus.server.serial.rtu import RTUServer

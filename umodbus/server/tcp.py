@@ -1,10 +1,10 @@
 import struct
 from types import MethodType
 
+from umodbus.exceptions import ServerDeviceFailureError
 from umodbus.route import Map
 from umodbus.server import AbstractRequestHandler, route
-from umodbus.utils import unpack_mbap, pack_mbap
-from umodbus.exceptions import ServerDeviceFailureError
+from umodbus.utils import pack_mbap, unpack_mbap
 
 
 def get_server(server_class, server_address, request_handler_class):

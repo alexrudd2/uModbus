@@ -2,7 +2,8 @@
 # scripts/example/simple_rtu_client.py
 import fcntl
 import struct
-from serial import Serial, PARITY_NONE
+
+from serial import PARITY_NONE, Serial
 
 from umodbus.client.serial import rtu
 

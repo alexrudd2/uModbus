@@ -1,16 +1,16 @@
 import struct
 from binascii import hexlify
 from types import MethodType
+
 from serial import SerialTimeoutException
 
 from umodbus import log
+from umodbus.client.serial.redundancy_check import CRCError
+from umodbus.exceptions import ModbusError, ServerDeviceFailureError
+from umodbus.functions import create_function_from_request_pdu
 from umodbus.route import Map
 from umodbus.server import route
-from umodbus.functions import create_function_from_request_pdu
-from umodbus.exceptions import ModbusError, ServerDeviceFailureError
-from umodbus.utils import (get_function_code_from_request_pdu,
-                           pack_exception_pdu)
-from umodbus.client.serial.redundancy_check import CRCError
+from umodbus.utils import get_function_code_from_request_pdu, pack_exception_pdu
 
 
 def get_server(server_class, serial_port):

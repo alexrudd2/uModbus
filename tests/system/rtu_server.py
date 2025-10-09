@@ -1,10 +1,9 @@
 from serial import serial_for_url
 
+from tests.system import route
 from umodbus import conf
 from umodbus.server.serial import get_server
 from umodbus.server.serial.rtu import RTUServer
-
-from tests.system import route
 
 conf.SIGNED_VALUES = True
 

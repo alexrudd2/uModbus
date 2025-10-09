@@ -1,10 +1,11 @@
 from __future__ import division
+
 import struct
 from binascii import hexlify
 
 from umodbus import log
-from umodbus.server.serial import AbstractSerialServer
 from umodbus.client.serial.redundancy_check import get_crc, validate_crc
+from umodbus.server.serial import AbstractSerialServer
 
 
 def get_char_size(baudrate):

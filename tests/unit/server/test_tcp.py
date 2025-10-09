@@ -3,10 +3,11 @@ those parts which can't be tested by system tests should be tested using
 unit tests.
 """
 import struct
+
 import pytest
 
-from umodbus.exceptions import ServerDeviceFailureError
 from umodbus.client.tcp import read_coils
+from umodbus.exceptions import ServerDeviceFailureError
 from umodbus.server.tcp import RequestHandler
 
 

@@ -1,10 +1,8 @@
-import sys
 import logging
+import sys
 from logging import getLogger
 
-from umodbus.utils import (log_to_stream, unpack_mbap, pack_mbap,
-                           pack_exception_pdu,
-                           get_function_code_from_request_pdu)
+from umodbus.utils import get_function_code_from_request_pdu, log_to_stream, pack_exception_pdu, pack_mbap, unpack_mbap
 
 
 def test_log_to_stream():

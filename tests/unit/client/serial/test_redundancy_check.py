@@ -1,8 +1,8 @@
 import struct
+
 import pytest
 
-from umodbus.client.serial.redundancy_check import (get_crc, validate_crc,
-                                                    CRCError)
+from umodbus.client.serial.redundancy_check import CRCError, get_crc, validate_crc
 
 
 def test_get_crc():

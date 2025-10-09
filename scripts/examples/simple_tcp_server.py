@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # scripts/examples/simple_tcp_server.py
 import logging
-from socketserver import TCPServer
-from collections import defaultdict
 from argparse import ArgumentParser
+from collections import defaultdict
+from socketserver import TCPServer
 
 from umodbus import conf
 from umodbus.server.tcp import RequestHandler, get_server

@@ -1,10 +1,11 @@
-import struct
-import pytest
 import socket
+import struct
 from threading import Thread
 
-from .tcp_server import app as tcp
+import pytest
+
 from .rtu_server import app as rtu
+from .tcp_server import app as tcp
 
 
 @pytest.fixture(autouse=True, scope="session")

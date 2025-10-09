@@ -1,11 +1,10 @@
-import pytest
 import struct
 from functools import partial
 
+import pytest
 
 from umodbus.client.serial import rtu
-from umodbus.client.serial.redundancy_check import (validate_crc,
-                                                    add_crc, CRCError)
+from umodbus.client.serial.redundancy_check import CRCError, add_crc, validate_crc
 
 
 def test_no_response_for_request_with_invalid_crc(rtu_server):

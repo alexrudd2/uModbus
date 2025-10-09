@@ -1,4 +1,4 @@
-from logging import getLogger, NullHandler
+from logging import NullHandler, getLogger
 
 log = getLogger('uModbus')
 log.addHandler(NullHandler())

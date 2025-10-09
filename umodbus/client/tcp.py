@@ -85,13 +85,19 @@ byte) + PDU (5 bytes).
 import struct
 from random import randint
 
-from umodbus.functions import (create_function_from_response_pdu,
-                               expected_response_pdu_size_from_request_pdu,
-                               pdu_to_function_code_or_raise_error, ReadCoils,
-                               ReadDiscreteInputs, ReadHoldingRegisters,
-                               ReadInputRegisters, WriteSingleCoil,
-                               WriteSingleRegister, WriteMultipleCoils,
-                               WriteMultipleRegisters)
+from umodbus.functions import (
+    ReadCoils,
+    ReadDiscreteInputs,
+    ReadHoldingRegisters,
+    ReadInputRegisters,
+    WriteMultipleCoils,
+    WriteMultipleRegisters,
+    WriteSingleCoil,
+    WriteSingleRegister,
+    create_function_from_response_pdu,
+    expected_response_pdu_size_from_request_pdu,
+    pdu_to_function_code_or_raise_error,
+)
 from umodbus.utils import recv_exactly
 
 

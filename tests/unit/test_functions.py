@@ -1,19 +1,31 @@
 import struct
+
 import pytest
 
+from umodbus.exceptions import (
+    AcknowledgeError,
+    GatewayPathUnavailableError,
+    GatewayTargetDeviceFailedToRespondError,
+    IllegalDataAddressError,
+    IllegalDataValueError,
+    IllegalFunctionError,
+    MemoryParityError,
+    ServerDeviceBusyError,
+    ServerDeviceFailureError,
+)
+from umodbus.functions import (
+    ReadCoils,
+    ReadDiscreteInputs,
+    ReadHoldingRegisters,
+    ReadInputRegisters,
+    WriteMultipleCoils,
+    WriteMultipleRegisters,
+    WriteSingleCoil,
+    WriteSingleRegister,
+    create_function_from_request_pdu,
+    create_function_from_response_pdu,
+)
 from umodbus.route import Map
-from umodbus.exceptions import (IllegalFunctionError, IllegalDataAddressError,
-                                IllegalDataValueError,
-                                ServerDeviceFailureError, AcknowledgeError,
-                                ServerDeviceBusyError, MemoryParityError,
-                                GatewayPathUnavailableError,
-                                GatewayTargetDeviceFailedToRespondError)
-from umodbus.functions import (create_function_from_response_pdu,
-                               create_function_from_request_pdu, ReadCoils,
-                               ReadDiscreteInputs, ReadHoldingRegisters,
-                               ReadInputRegisters, WriteSingleCoil,
-                               WriteSingleRegister, WriteMultipleCoils,
-                               WriteMultipleRegisters)
 
 
 @pytest.fixture
