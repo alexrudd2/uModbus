@@ -37,7 +37,7 @@ dev = [
     "pytest-cov",
     "ruff>=0.14.0",
     "sphinx==2.2.2",
-    "sphinx-rtd-theme==0.4.3",
+    "sphinx-rtd-theme==3.0.2",
 ]
 
 [tool.ruff]
